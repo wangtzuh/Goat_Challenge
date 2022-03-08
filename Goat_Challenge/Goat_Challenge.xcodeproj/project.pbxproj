@@ -13,7 +13,6 @@
 		B4C454B127D73306009DACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B027D73306009DACE6 /* AppDelegate.swift */; };
 		B4C454B327D73306009DACE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B227D73306009DACE6 /* SceneDelegate.swift */; };
 		B4C454B527D73306009DACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B427D73306009DACE6 /* ViewController.swift */; };
-		B4C454B827D73306009DACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C454B627D73306009DACE6 /* Main.storyboard */; };
 		B4C454BA27D73308009DACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C454B927D73308009DACE6 /* Assets.xcassets */; };
 		B4C454BD27D73308009DACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C454BB27D73308009DACE6 /* LaunchScreen.storyboard */; };
 		B4C454C827D73309009DACE6 /* Goat_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454C727D73309009DACE6 /* Goat_ChallengeTests.swift */; };
@@ -48,7 +47,6 @@
 		B4C454B027D73306009DACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C454B227D73306009DACE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B4C454B427D73306009DACE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4C454B727D73306009DACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4C454B927D73308009DACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C454BC27D73308009DACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4C454BE27D73308009DACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				F8BEA7DE4A10D96A4310C563 /* Pods-Goat_ChallengeTests.debug.xcconfig */,
 				EBA810D356AC0FD88B7A869E /* Pods-Goat_ChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,7 +140,6 @@
 				B4C454B027D73306009DACE6 /* AppDelegate.swift */,
 				B4C454B227D73306009DACE6 /* SceneDelegate.swift */,
 				B4C454B427D73306009DACE6 /* ViewController.swift */,
-				B4C454B627D73306009DACE6 /* Main.storyboard */,
 				B4C454B927D73308009DACE6 /* Assets.xcassets */,
 				B4C454BB27D73308009DACE6 /* LaunchScreen.storyboard */,
 				B4C454BE27D73308009DACE6 /* Info.plist */,
@@ -279,7 +275,6 @@
 			files = (
 				B4C454BD27D73308009DACE6 /* LaunchScreen.storyboard in Resources */,
 				B4C454BA27D73308009DACE6 /* Assets.xcassets in Resources */,
-				B4C454B827D73306009DACE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +441,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B4C454B627D73306009DACE6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4C454B727D73306009DACE6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4C454BB27D73308009DACE6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -594,7 +581,6 @@
 				INFOPLIST_FILE = Goat_Challenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -623,7 +609,6 @@
 				INFOPLIST_FILE = Goat_Challenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
