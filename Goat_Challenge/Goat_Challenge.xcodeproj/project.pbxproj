@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC35CF7B649CB6C7AB4D183 /* Pods_Goat_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D2853C51B456A1D9CA3F04 /* Pods_Goat_ChallengeTests.framework */; };
+		7840BAEC6419A3E4BE17F8F3 /* Pods_Goat_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27F081BC18C25B5BFDA5BC6 /* Pods_Goat_Challenge.framework */; };
+		9341C9ED183F9D41A3BAB09B /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C22322B87D880A9918C220 /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework */; };
 		B4C454B127D73306009DACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B027D73306009DACE6 /* AppDelegate.swift */; };
 		B4C454B327D73306009DACE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B227D73306009DACE6 /* SceneDelegate.swift */; };
 		B4C454B527D73306009DACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B427D73306009DACE6 /* ViewController.swift */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D2853C51B456A1D9CA3F04 /* Pods_Goat_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goat_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E9DDEC0B54EFAAD8DB89B6 /* Pods-Goat_Challenge-Goat_ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_Challenge-Goat_ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Goat_Challenge-Goat_ChallengeUITests/Pods-Goat_Challenge-Goat_ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50DD6707E839C46D57563D79 /* Pods-Goat_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Goat_Challenge/Pods-Goat_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		99C22322B87D880A9918C220 /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goat_Challenge_Goat_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27F081BC18C25B5BFDA5BC6 /* Pods_Goat_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goat_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C454AD27D73306009DACE6 /* Goat_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goat_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C454B027D73306009DACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C454B227D73306009DACE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		B4C454CD27D73309009DACE6 /* Goat_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goat_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C454D127D73309009DACE6 /* Goat_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goat_ChallengeUITests.swift; sourceTree = "<group>"; };
 		B4C454D327D73309009DACE6 /* Goat_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goat_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB91DCE0E10250D287054608 /* Pods-Goat_Challenge-Goat_ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_Challenge-Goat_ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Goat_Challenge-Goat_ChallengeUITests/Pods-Goat_Challenge-Goat_ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D055A6D11E2650330CFE81CE /* Pods-Goat_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_Challenge.release.xcconfig"; path = "Target Support Files/Pods-Goat_Challenge/Pods-Goat_Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		EBA810D356AC0FD88B7A869E /* Pods-Goat_ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Goat_ChallengeTests/Pods-Goat_ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8BEA7DE4A10D96A4310C563 /* Pods-Goat_ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Goat_ChallengeTests/Pods-Goat_ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7840BAEC6419A3E4BE17F8F3 /* Pods_Goat_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC35CF7B649CB6C7AB4D183 /* Pods_Goat_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9341C9ED183F9D41A3BAB09B /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2E6EDD6A495B7F8D2244446 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50DD6707E839C46D57563D79 /* Pods-Goat_Challenge.debug.xcconfig */,
+				D055A6D11E2650330CFE81CE /* Pods-Goat_Challenge.release.xcconfig */,
+				35E9DDEC0B54EFAAD8DB89B6 /* Pods-Goat_Challenge-Goat_ChallengeUITests.debug.xcconfig */,
+				CB91DCE0E10250D287054608 /* Pods-Goat_Challenge-Goat_ChallengeUITests.release.xcconfig */,
+				F8BEA7DE4A10D96A4310C563 /* Pods-Goat_ChallengeTests.debug.xcconfig */,
+				EBA810D356AC0FD88B7A869E /* Pods-Goat_ChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7CF0A0A6DA91E4E722D85A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A27F081BC18C25B5BFDA5BC6 /* Pods_Goat_Challenge.framework */,
+				99C22322B87D880A9918C220 /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework */,
+				04D2853C51B456A1D9CA3F04 /* Pods_Goat_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4C454A427D73305009DACE6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				B4C454C627D73309009DACE6 /* Goat_ChallengeTests */,
 				B4C454D027D73309009DACE6 /* Goat_ChallengeUITests */,
 				B4C454AE27D73306009DACE6 /* Products */,
+				A2E6EDD6A495B7F8D2244446 /* Pods */,
+				A7CF0A0A6DA91E4E722D85A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C454D727D73309009DACE6 /* Build configuration list for PBXNativeTarget "Goat_Challenge" */;
 			buildPhases = (
+				705237347ED2406D7691AD55 /* [CP] Check Pods Manifest.lock */,
 				B4C454A927D73305009DACE6 /* Sources */,
 				B4C454AA27D73305009DACE6 /* Frameworks */,
 				B4C454AB27D73305009DACE6 /* Resources */,
+				3D4908F0DC31BF566146A2D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C454DA27D73309009DACE6 /* Build configuration list for PBXNativeTarget "Goat_ChallengeTests" */;
 			buildPhases = (
+				6A000A9E9D89708C650CC302 /* [CP] Check Pods Manifest.lock */,
 				B4C454BF27D73309009DACE6 /* Sources */,
 				B4C454C027D73309009DACE6 /* Frameworks */,
 				B4C454C127D73309009DACE6 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C454DD27D73309009DACE6 /* Build configuration list for PBXNativeTarget "Goat_ChallengeUITests" */;
 			buildPhases = (
+				0E438D5E1B5FBE16D4E5DE44 /* [CP] Check Pods Manifest.lock */,
 				B4C454C927D73309009DACE6 /* Sources */,
 				B4C454CA27D73309009DACE6 /* Frameworks */,
 				B4C454CB27D73309009DACE6 /* Resources */,
+				2C5B75CD6C50107CF7AC2FD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E438D5E1B5FBE16D4E5DE44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goat_Challenge-Goat_ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5B75CD6C50107CF7AC2FD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goat_Challenge-Goat_ChallengeUITests/Pods-Goat_Challenge-Goat_ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goat_Challenge-Goat_ChallengeUITests/Pods-Goat_Challenge-Goat_ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goat_Challenge-Goat_ChallengeUITests/Pods-Goat_Challenge-Goat_ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4908F0DC31BF566146A2D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goat_Challenge/Pods-Goat_Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goat_Challenge/Pods-Goat_Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goat_Challenge/Pods-Goat_Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A000A9E9D89708C650CC302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goat_ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		705237347ED2406D7691AD55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goat_Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4C454A927D73305009DACE6 /* Sources */ = {
@@ -434,6 +583,7 @@
 		};
 		B4C454D827D73309009DACE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DD6707E839C46D57563D79 /* Pods-Goat_Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +612,7 @@
 		};
 		B4C454D927D73309009DACE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D055A6D11E2650330CFE81CE /* Pods-Goat_Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +641,7 @@
 		};
 		B4C454DB27D73309009DACE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BEA7DE4A10D96A4310C563 /* Pods-Goat_ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +662,7 @@
 		};
 		B4C454DC27D73309009DACE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA810D356AC0FD88B7A869E /* Pods-Goat_ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +683,7 @@
 		};
 		B4C454DE27D73309009DACE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E9DDEC0B54EFAAD8DB89B6 /* Pods-Goat_Challenge-Goat_ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +702,7 @@
 		};
 		B4C454DF27D73309009DACE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB91DCE0E10250D287054608 /* Pods-Goat_Challenge-Goat_ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

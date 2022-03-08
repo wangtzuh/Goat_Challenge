@@ -1,0 +1,6 @@
+framework module Pods_Goat_Challenge_Goat_ChallengeUITests {
+  umbrella header "Pods-Goat_Challenge-Goat_ChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
