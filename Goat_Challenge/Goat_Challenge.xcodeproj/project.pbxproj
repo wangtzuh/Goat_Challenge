@@ -10,6 +10,10 @@
 		5EC35CF7B649CB6C7AB4D183 /* Pods_Goat_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D2853C51B456A1D9CA3F04 /* Pods_Goat_ChallengeTests.framework */; };
 		7840BAEC6419A3E4BE17F8F3 /* Pods_Goat_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27F081BC18C25B5BFDA5BC6 /* Pods_Goat_Challenge.framework */; };
 		9341C9ED183F9D41A3BAB09B /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C22322B87D880A9918C220 /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework */; };
+		B43BF9B927D75F9600B65096 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BF9B827D75F9600B65096 /* APIClient.swift */; };
+		B43BF9BB27D864F700B65096 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BF9BA27D864F700B65096 /* APIRoute.swift */; };
+		B43BF9BD27D8657400B65096 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BF9BC27D8657400B65096 /* APIResponse.swift */; };
+		B43BF9C127D88C1100B65096 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BF9C027D88C1100B65096 /* APIConfiguration.swift */; };
 		B4C454B127D73306009DACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B027D73306009DACE6 /* AppDelegate.swift */; };
 		B4C454B327D73306009DACE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B227D73306009DACE6 /* SceneDelegate.swift */; };
 		B4C454B527D73306009DACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C454B427D73306009DACE6 /* ViewController.swift */; };
@@ -43,6 +47,10 @@
 		50DD6707E839C46D57563D79 /* Pods-Goat_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goat_Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Goat_Challenge/Pods-Goat_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		99C22322B87D880A9918C220 /* Pods_Goat_Challenge_Goat_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goat_Challenge_Goat_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27F081BC18C25B5BFDA5BC6 /* Pods_Goat_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goat_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43BF9B827D75F9600B65096 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B43BF9BA27D864F700B65096 /* APIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoute.swift; sourceTree = "<group>"; };
+		B43BF9BC27D8657400B65096 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		B43BF9C027D88C1100B65096 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		B4C454AD27D73306009DACE6 /* Goat_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goat_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C454B027D73306009DACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C454B227D73306009DACE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +120,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B43BF9B727D75F8700B65096 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B43BF9B827D75F9600B65096 /* APIClient.swift */,
+				B43BF9BA27D864F700B65096 /* APIRoute.swift */,
+				B43BF9BC27D8657400B65096 /* APIResponse.swift */,
+				B43BF9C027D88C1100B65096 /* APIConfiguration.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		B4C454A427D73305009DACE6 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +156,7 @@
 		B4C454AF27D73306009DACE6 /* Goat_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B43BF9B727D75F8700B65096 /* Network */,
 				B4C454B027D73306009DACE6 /* AppDelegate.swift */,
 				B4C454B227D73306009DACE6 /* SceneDelegate.swift */,
 				B4C454B427D73306009DACE6 /* ViewController.swift */,
@@ -405,6 +425,10 @@
 				B4C454B527D73306009DACE6 /* ViewController.swift in Sources */,
 				B4C454B127D73306009DACE6 /* AppDelegate.swift in Sources */,
 				B4C454B327D73306009DACE6 /* SceneDelegate.swift in Sources */,
+				B43BF9B927D75F9600B65096 /* APIClient.swift in Sources */,
+				B43BF9BB27D864F700B65096 /* APIRoute.swift in Sources */,
+				B43BF9C127D88C1100B65096 /* APIConfiguration.swift in Sources */,
+				B43BF9BD27D8657400B65096 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
