@@ -120,7 +120,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B43BF9B727D75F8700B65096 /* API */ = {
+		B43BF9B727D75F8700B65096 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				B43BF9B827D75F9600B65096 /* APIClient.swift */,
@@ -128,7 +128,7 @@
 				B43BF9BC27D8657400B65096 /* APIResponse.swift */,
 				B43BF9C027D88C1100B65096 /* APIConfiguration.swift */,
 			);
-			path = API;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		B4C454A427D73305009DACE6 = {
@@ -156,7 +156,7 @@
 		B4C454AF27D73306009DACE6 /* Goat_Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				B43BF9B727D75F8700B65096 /* API */,
+				B43BF9B727D75F8700B65096 /* Network */,
 				B4C454B027D73306009DACE6 /* AppDelegate.swift */,
 				B4C454B227D73306009DACE6 /* SceneDelegate.swift */,
 				B4C454B427D73306009DACE6 /* ViewController.swift */,
