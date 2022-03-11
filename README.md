@@ -2,6 +2,8 @@
 
 ### Description
 Goat_Challenge is an application architectured with __MVP__ and __Clean Architecture__ concepts
+Functionalities:
+ Fetch weather data from OpenWeatherAPI and display onto the UITableView.
 
 #### MVP Concepts
 * `Model` - plain `struct` implementations
@@ -32,3 +34,9 @@ Gateways & Framework Logic
   * `APIGateway` used to perform requests through http request
   * More example, such as `LocalPersistasnceGateway` to interact with the local database.
 
+
+#### Still missing:
+1. Unit test for `Model`, `Usecase`, concrete `Gateways` and `APIClient`
+2. `LocalPersistantLayer` to store and fetch the Weather data. Therefore we can have the flow of requesting weather data by going though http request, then check CoreData, and lastly load the mock.json file. 
+3. Should cover a usecase for 'GCLocationManager' to fit the general structure for the application.
+4. Error handling cases.
