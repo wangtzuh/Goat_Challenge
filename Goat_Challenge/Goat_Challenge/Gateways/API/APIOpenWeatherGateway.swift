@@ -26,7 +26,15 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
                 let entity = convertToEntity(with: apiResponse.entity)
                 completion(.success(entity))
             case .failure(let error):
-                completion(.failure(error))
+                guard let mockData = parseLocalMockFile() else {
+                    completion(.failure(error))
+                    return
+                }
+                completion(.success(convertToEntity(with: mockData)))
+            }
+        }
+    }
+    
     /// Parse OpenWeather API Key from Info.plist
     /// This was intended to be used as an authenticator for the API request by checking if there existed as API Key.
     /// - Returns: APIKey?
@@ -36,8 +44,21 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
         }
         return value as? String
     }
-            }
+    
+    
+    private func parseLocalMockFile() -> APIWeatherOneCallData? {
+        guard let url = Bundle.main.path(forResource: "mock", ofType: ".json") else {
+            return nil
         }
+        do {
+            if let jsonData = try String(contentsOfFile: url).data(using: .utf8) {
+                let decoded = try JSONDecoder().decode(APIWeatherOneCallData.self, from: jsonData)
+                return decoded
+            }
+        } catch {
+            print(error)
+        }
+        return nil
     }
     
     /// Convert APIEntity to EntityModel that matched the exact busniess logic we want.
