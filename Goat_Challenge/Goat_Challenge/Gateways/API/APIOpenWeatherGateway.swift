@@ -22,10 +22,11 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
         APIClient.shared.getRequest(route: .onecall, param: dict) { [self] (result: Result<APIResponse<APIWeatherOneCallData>>) in
             switch result {
             case .success(let apiResponse):
-                // Can do futhure caching for something like HttpHeader....
+                // Can do futhure caching for something like HttpHeader.
                 let entity = convertToEntity(with: apiResponse.entity)
                 completion(.success(entity))
             case .failure(let error):
+                // Fetch mock data in mock.json
                 guard let mockData = parseLocalMockFile() else {
                     completion(.failure(error))
                     return
@@ -45,7 +46,8 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
         return value as? String
     }
     
-    
+    /// Read local mock.json file to fetch the mock APIWeaterOneCallData
+    /// - Returns: Decoded APIWeaterOneCallData
     private func parseLocalMockFile() -> APIWeatherOneCallData? {
         guard let url = Bundle.main.path(forResource: "mock", ofType: ".json") else {
             return nil
@@ -96,8 +98,8 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
     
     /// Hardcoded convertion to concatenate icon name to icon url in OpenWeatherApi
     /// https://openweathermap.org/weather-conditions
-    /// - Parameter iconName:
-    /// - Returns:
+    /// - Parameter iconName: icon name fetched from OpenWeather API call
+    /// - Returns: Image url path as String
     private func concatenateIconUrl(_ iconName: String) -> String {
         return "https://openweathermap.org/img/wn/\(iconName)@2x.png"
     }

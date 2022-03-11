@@ -11,6 +11,7 @@ protocol DetailWeatherConfiguratorDelegate {
     func configure(_ viewController: DetailWeatherViewController)
 }
 
+/// Simple dependency injection for DetailWeatherConfigurator
 class DetailWeatherConfigurator: DetailWeatherConfiguratorDelegate {
     
     private let forcastData: DailyForcastData

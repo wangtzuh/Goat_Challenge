@@ -68,6 +68,7 @@ class WeatherTableHeaderView: UITableViewHeaderFooterView {
     }()
 }
 
+// MARK: - WeatherTableHeaderView Delegate
 extension WeatherTableHeaderView: WeatherTableHeaderViewDelegate {
     func display(city: String, current: Int, description: String, max: Int, min: Int) {
         cityLabel.text = city

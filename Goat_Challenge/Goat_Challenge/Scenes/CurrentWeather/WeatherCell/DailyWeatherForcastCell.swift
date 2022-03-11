@@ -41,7 +41,7 @@ class DailyWeatherForcastCell: UITableViewCell {
         stackView.axis = .horizontal
         stackView.distribution = .fillProportionally
         stackView.spacing = 20
-        stackView.alignment = .leading
+        stackView.alignment = .center
         return stackView
     }()
     

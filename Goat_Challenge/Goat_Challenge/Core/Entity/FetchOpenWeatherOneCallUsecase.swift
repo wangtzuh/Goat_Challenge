@@ -32,6 +32,8 @@ protocol FetchOpenWeatherOneCallUsecaseDelegate {
     func fetchOpenWeather(param: OpenWeatherGatewayParamDelegate, completion: @escaping FetchOpenWeatherOnceCallUsecaseCompletion)
 }
 
+
+/// Exact implementation about how we fetch the data based on the Configurator
 class FetchOpenWeatherOneCallUsecase: FetchOpenWeatherOneCallUsecaseDelegate {
     
     private let openWeatherGateway: OpenWeatherGateway
@@ -42,6 +44,7 @@ class FetchOpenWeatherOneCallUsecase: FetchOpenWeatherOneCallUsecaseDelegate {
     
     func fetchOpenWeather(param: OpenWeatherGatewayParamDelegate, completion: @escaping FetchOpenWeatherOnceCallUsecaseCompletion) {
         openWeatherGateway.fetchOpenWeatherOneCall(param: param) { result in
+            // Can perform extra modification if needed before the data be displayed on the UITableView or other error handling process.
             completion(result)
         }
     }
