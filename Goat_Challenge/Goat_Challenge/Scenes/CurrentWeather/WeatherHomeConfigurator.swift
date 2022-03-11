@@ -11,3 +11,15 @@ protocol WeatherHomeConfiguratorDelegate {
     func configure(_ viewController: WeatherHomeViewController)
 }
 
+class WeatherHomeConfigurator: WeatherHomeConfiguratorDelegate {
+    
+    func configure(_ viewController: WeatherHomeViewController) {
+        let apiGateway = APIOpenWeatherGateway()
+        let fetchUsecase = FetchOpenWeatherOneCallUsecase(gateway: apiGateway)
+        let locationManager = GCLocationManager()
+        let presenter = WeatherHomePresenter(view: viewController,
+                                             fetchWeatherUsecase: fetchUsecase,
+                                             locationManager: locationManager)
+        viewController.presenter = presenter
+    }
+}

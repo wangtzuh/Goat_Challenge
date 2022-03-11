@@ -7,10 +7,21 @@
 
 import Foundation
 
-protocol WeatherHomeView: Any {
-    
-    
-    
-    
-    
+/// ViewController related methods
+protocol WeatherHomeView: AnyObject {
+    func animateIndicatorView()
+    func reloadTableView()
+    func routeToDetailPage(with detail: DailyForcastData)
+}
+
+protocol WeatherTableHeaderViewDelegate {
+    func display(city: String, current: Int, description: String, max: Int, min: Int)
+}
+
+protocol HourlyWeatherForcastCellDelegate {
+    func display()
+}
+
+protocol DailyWeatherForcastCellDelegate {
+    func display(date: String, iconUrl: String, minTemp: Int, maxTemp: Int)
 }
