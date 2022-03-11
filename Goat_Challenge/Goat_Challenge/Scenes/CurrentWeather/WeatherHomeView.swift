@@ -18,10 +18,6 @@ protocol WeatherTableHeaderViewDelegate {
     func display(city: String, current: Int, description: String, max: Int, min: Int)
 }
 
-protocol HourlyWeatherForcastCellDelegate {
-    func display()
-}
-
 protocol DailyWeatherForcastCellDelegate {
     func display(date: String, iconUrl: String, minTemp: Int, maxTemp: Int)
 }
