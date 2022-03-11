@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// API entity decoded from the response thourgh network
 struct APIWeatherOneCallData: Codable {
     let lat: Double
     let lon: Double

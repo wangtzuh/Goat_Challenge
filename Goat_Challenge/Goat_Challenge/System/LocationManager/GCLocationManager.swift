@@ -8,13 +8,14 @@
 import Foundation
 import CoreLocation
 
+/// Protocol define the public APIs to be used.
 protocol GCLocationManagerProtocol {
     func registerObserver(_ delegate: GCLocationManagerDelegate)
     func requestLocation()
     func stopRequestingLocation()
 }
 
-
+/// Simple service to deal with CoreLocation in iOS. Exists optimization for permission handling.
 class GCLocationManager: NSObject, GCLocationManagerProtocol {
     
     private weak var delegate: GCLocationManagerDelegate?

@@ -42,9 +42,9 @@ class DetailWeatherPresenter: DetailWeatherPresenterDelegate {
         case 4:
             cell.display(title: "Highest Temp: ", description: "\(dailyWeather.maxTemperature)\u{00B0}")
         case 5:
-            cell.display(title: "Humidity", description: "\(dailyWeather.humidity)%")
+            cell.display(title: "Humidity: ", description: "\(dailyWeather.humidity)%")
         case 6:
-            cell.display(title: "Status", description: dailyWeather.description.mainStatus)
+            cell.display(title: "Status: ", description: dailyWeather.description.mainStatus)
         default:
             break
         }

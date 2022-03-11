@@ -11,6 +11,7 @@ protocol WeatherHomeConfiguratorDelegate {
     func configure(_ viewController: WeatherHomeViewController)
 }
 
+/// Simple dependency injection for WeatherHomeConfigurator
 class WeatherHomeConfigurator: WeatherHomeConfiguratorDelegate {
     
     func configure(_ viewController: WeatherHomeViewController) {

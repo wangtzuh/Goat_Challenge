@@ -250,7 +250,7 @@
 			children = (
 				B43BF9B727D75F8700B65096 /* Network */,
 				B43BF9E727DA8E5B00B65096 /* Entity */,
-				B43BF9DF27D916BE00B65096 /* APIOpenWeatherGateway.swift */,
+				B43BFA0227DB627400B65096 /* Gateway */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -303,6 +303,14 @@
 				B43BFA0027DB2C2000B65096 /* DateUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B43BFA0227DB627400B65096 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				B43BF9DF27D916BE00B65096 /* APIOpenWeatherGateway.swift */,
+			);
+			path = Gateway;
 			sourceTree = "<group>";
 		};
 		B4C454A427D73305009DACE6 = {

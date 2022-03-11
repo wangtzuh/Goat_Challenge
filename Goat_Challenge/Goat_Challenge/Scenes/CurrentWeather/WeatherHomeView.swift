@@ -14,6 +14,7 @@ protocol WeatherHomeView: AnyObject {
     func routeToDetailPage(with detail: DailyForcastData)
 }
 
+/// Passive MVP's V layer methods to update the UI
 protocol WeatherTableHeaderViewDelegate {
     func display(city: String, current: Int, description: String, max: Int, min: Int)
 }

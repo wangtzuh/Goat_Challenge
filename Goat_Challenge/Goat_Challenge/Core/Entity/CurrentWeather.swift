@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Entity Models
 struct WeatherOneCallData {
     let longitude: Double
     let latitude: Double

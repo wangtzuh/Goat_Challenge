@@ -17,7 +17,6 @@ protocol WeatherHomePresenterDelegate: Any {
     func heightForHeader(in section: Int) -> Double
     func configureWeatherTableHeader(header: WeatherTableHeaderViewDelegate)
     func configureSectionTitleFor(section: Int) -> String?
-    
     func configureDailyWeatherCell(cell: DailyWeatherForcastCellDelegate, for row: Int)
     
     func didSelectAllowForLocation()
