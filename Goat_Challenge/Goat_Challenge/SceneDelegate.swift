@@ -19,8 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = RootNavigationController(rootViewController: WeatherHomeViewController())
         window?.backgroundColor = .systemBackground
+        
+        let homeViewController = WeatherHomeViewController()
+        let configurator = WeatherHomeConfigurator()
+        homeViewController.configurator = configurator
+        window?.rootViewController = RootNavigationController(rootViewController: homeViewController)
         window?.makeKeyAndVisible()
     }
 
