@@ -9,14 +9,13 @@ import Foundation
 
 enum APIRoute {
     
-    case example
+    case onecall
     case exampleWithParameter(param: String)
-    
     
     var path: String {
         switch self {
-        case .example:
-            return "example"
+        case .onecall:
+            return "onecall"
         case .exampleWithParameter(let param):
             return "test_route_with_param: \(param)"
         }
