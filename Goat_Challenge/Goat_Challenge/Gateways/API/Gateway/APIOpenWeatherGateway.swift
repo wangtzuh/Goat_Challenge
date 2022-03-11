@@ -7,9 +7,12 @@
 
 import Foundation
 
+/// Concrete instance to define how we fetch the OpenWeatherData through network.
 class APIOpenWeatherGateway: OpenWeatherGateway {
     
     func fetchOpenWeatherOneCall(param: OpenWeatherGatewayParamDelegate, completion: @escaping OpenWeatherOneCallResult) {
+        
+        //This was intended to be used as an authenticator for the API request by checking if there existed as API Key.
         guard let apiKey = parseAPIkey() else {
             return
         }
@@ -22,11 +25,12 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
         APIClient.shared.getRequest(route: .onecall, param: dict) { [self] (result: Result<APIResponse<APIWeatherOneCallData>>) in
             switch result {
             case .success(let apiResponse):
-                // Can do futhure caching for something like HttpHeader.
+                // Can do futhure caching for something like HttpHeader, in other backgroundQueue
                 let entity = convertToEntity(with: apiResponse.entity)
                 completion(.success(entity))
             case .failure(let error):
-                // Fetch mock data in mock.json
+                // Workaround method to fecth mock json file.
+                // I was intended to implement a LocalPersitance Layer. If we encounted any network issues, we can go check for the local persistance.
                 guard let mockData = parseLocalMockFile() else {
                     completion(.failure(error))
                     return
@@ -37,7 +41,6 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
     }
     
     /// Parse OpenWeather API Key from Info.plist
-    /// This was intended to be used as an authenticator for the API request by checking if there existed as API Key.
     /// - Returns: APIKey?
     private func parseAPIkey() -> String? {
         guard let value = Bundle.main.object(forInfoDictionaryKey: "OpenWeather API KEY") else {
@@ -49,6 +52,7 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
     /// Read local mock.json file to fetch the mock APIWeaterOneCallData
     /// - Returns: Decoded APIWeaterOneCallData
     private func parseLocalMockFile() -> APIWeatherOneCallData? {
+        // This suppose to be implmented inside the APIWeatherOneCallData as the static field.
         guard let url = Bundle.main.path(forResource: "mock", ofType: ".json") else {
             return nil
         }

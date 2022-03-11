@@ -57,6 +57,10 @@ class APIClient {
         guard let domain = APIClient.apiConfigs?.domain else {
             return
         }
+        // Can distinguish the .domain field by checking if we are running a development environment,
+        // then we just return the mock data of type T. Then T should implements a customize protocol
+        // which contains a static field mockData
+        
         let requestUrl: String = "\(domain)/\(route.path)"
         session.request(requestUrl, method: method, parameters: params, encoding: encoding, headers: header)
             .validate(statusCode: 200..<299)

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 typealias FetchOpenWeatherOnceCallUsecaseCompletion = (_ weatherData: Result<WeatherOneCallData>) -> Void
 
