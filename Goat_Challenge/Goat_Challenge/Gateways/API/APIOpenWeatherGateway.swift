@@ -10,10 +10,16 @@ import Foundation
 class APIOpenWeatherGateway: OpenWeatherGateway {
     
     func fetchOpenWeatherOneCall(param: OpenWeatherGatewayParamDelegate, completion: @escaping OpenWeatherOneCallResult) {
+        guard let apiKey = parseAPIkey() else {
+            return
+        }
         
+        var dict = param.toJSON()
+        dict["exlude"] = "minutely"                 //exclude minutely data
+        dict["units"] = "metric"                   // set unit as Celcuis
+        dict["appid"] = apiKey
         
-        
-        APIClient.shared.getRequest(route: .onecall, param: param.toJSON()) { [self] (result: Result<APIResponse<APIWeatherOneCallData>>) in
+        APIClient.shared.getRequest(route: .onecall, param: dict) { [self] (result: Result<APIResponse<APIWeatherOneCallData>>) in
             switch result {
             case .success(let apiResponse):
                 // Can do futhure caching for something like HttpHeader....
@@ -21,6 +27,15 @@ class APIOpenWeatherGateway: OpenWeatherGateway {
                 completion(.success(entity))
             case .failure(let error):
                 completion(.failure(error))
+    /// Parse OpenWeather API Key from Info.plist
+    /// This was intended to be used as an authenticator for the API request by checking if there existed as API Key.
+    /// - Returns: APIKey?
+    private func parseAPIkey() -> String? {
+        guard let value = Bundle.main.object(forInfoDictionaryKey: "OpenWeather API KEY") else {
+            return nil
+        }
+        return value as? String
+    }
             }
         }
     }

@@ -12,24 +12,18 @@ typealias FetchOpenWeatherOnceCallUsecaseCompletion = (_ weatherData: Result<Wea
 
 struct FetchOpenWeatherOnceCellParam: OpenWeatherGatewayParamDelegate {
     
-    private let apiKey: String
     var longitude: Double
     var langtitude: Double
     
-    init(_ longtitue: Double, _ langtitude: Double, apiKey: String) {
+    init(_ longtitue: Double, _ langtitude: Double) {
         self.longitude = longtitue
         self.langtitude = langtitude
-        self.apiKey = apiKey
     }
     
     func toJSON() -> [String : String] {
         var dict = [String:String]()
         dict["lat"] = "\(langtitude)"
         dict["lon"] = "\(longitude)"
-        dict["appid"] = apiKey
-        
-        dict["exlude"] = "minutely"                 //exclude minutely data
-        dict["units"] = "metric"                    // temperature unit as Celsius
         return dict
     }
 }

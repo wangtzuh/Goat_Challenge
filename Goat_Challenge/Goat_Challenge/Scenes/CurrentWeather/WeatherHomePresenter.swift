@@ -112,7 +112,7 @@ class WeatherHomePresenter: WeatherHomePresenterDelegate {
 private extension WeatherHomePresenter {
     func requestWeatherData(_ locationData: LocationData) {
         view?.animateIndicatorView()
-        let param = FetchOpenWeatherOnceCellParam(locationData.longitude, locationData.latitude, apiKey: "6adcdc9dde22798a4554f35aa151d072")
+        let param = FetchOpenWeatherOnceCellParam(locationData.longitude, locationData.latitude)
         fetchWeatherUsecase.fetchOpenWeather(param: param) { result in
             switch result {
             case .success(let data):
