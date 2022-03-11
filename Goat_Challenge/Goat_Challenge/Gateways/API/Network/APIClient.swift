@@ -25,10 +25,13 @@ class APIClient {
         }
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.timeoutIntervalForRequest = 60
-        session = Session.init(configuration: sessionConfig, delegate: SessionDelegate.init())
+        session = Session.init(configuration: sessionConfig,delegate: SessionDelegate.init())
     }
     
-    public func getRequest<T: Decodable>(route: APIRoute, param: Parameters?, header: HTTPHeaders?, completion: @escaping (Result<APIResponse<T>>) -> Void) {
+    public func getRequest<T: Decodable>(route: APIRoute,
+                                         param: Parameters? = nil,
+                                         header: HTTPHeaders? = nil,
+                                         completion: @escaping (Result<APIResponse<T>>) -> Void) {
         httpRequest(route: route, method: .get, params: param, header: header) { (response: Result<APIResponse<T>>) in
             switch response {
             case .success(let result):
@@ -55,12 +58,12 @@ class APIClient {
             return
         }
         let requestUrl: String = "\(domain)/\(route.path)"
-        
         session.request(requestUrl, method: method, parameters: params, encoding: encoding, headers: header)
             .validate(statusCode: 200..<299)
             .responseDecodable(of: T.self) { response in
                 switch response.result {
                 case .success(let target):
+                    // Completion closure runs on MainQueue.
                     completion(.success(APIResponse(target, response.response!)))
                 case .failure(let afError):
                     if afError.isResponseValidationError {
@@ -78,6 +81,5 @@ class APIClient {
                 }
                 
             }
-  
     }
 }

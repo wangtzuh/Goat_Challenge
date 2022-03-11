@@ -45,7 +45,3 @@ enum APIErrorType {
     case serialization
     case unknown
 }
-
-
-
-
